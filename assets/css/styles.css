@@ -1,0 +1,86 @@
+:root {
+  --bg-primary: #111317;
+  --bg-surface: #1a1c20;
+  --bg-surface-strong: #1e2024;
+  --bg-surface-soft: #2a2c31;
+  --text-primary: #ffffff;
+  --text-muted: #c6c9ad;
+  --accent: #cef11c;
+  --accent-strong: #b4d400;
+  --secondary: #ffb5a0;
+  --tertiary: #7df4ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  overscroll-behavior: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+main > :first-child {
+  margin-top: 0 !important;
+}
+
+main > :last-child {
+  margin-bottom: 0 !important;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.site-nav a {
+  transition: color 0.2s ease, opacity 0.2s ease, transform 0.2s ease;
+}
+
+.site-nav a:hover {
+  transform: translateY(-1px);
+}
+
+.site-nav a.is-active {
+  color: #cef11c;
+}
+
+.section-block {
+  position: relative;
+}
+
+.card-surface {
+  background: rgba(26, 28, 32, 0.9);
+  border: 1px solid rgba(143, 147, 121, 0.18);
+}
+
+.glow-accent {
+  box-shadow: 0 0 0 1px rgba(206, 241, 28, 0.08), 0 18px 42px rgba(0, 0, 0, 0.18);
+}
+
+@media (max-width: 768px) {
+  html {
+    scroll-padding-top: 88px;
+  }
+}

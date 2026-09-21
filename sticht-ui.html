@@ -1,0 +1,2313 @@
+<!doctype html>
+
+<html class="dark" lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="web_standard" name="shell-type" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-tint": "#b4d400",
+              "on-primary-fixed-variant": "#3f4c00",
+              surface: "#111317",
+              "primary-fixed-dim": "#b4d400",
+              "inverse-on-surface": "#2f3035",
+              error: "#ffb4ab",
+              "on-secondary": "#5f1500",
+              "on-error": "#690005",
+              "secondary-fixed": "#ffdbd1",
+              "tertiary-fixed-dim": "#00dbe9",
+              "surface-container-highest": "#333539",
+              "surface-container-low": "#1a1c20",
+              "surface-bright": "#37393e",
+              "outline-variant": "#454933",
+              "surface-container-lowest": "#0c0e12",
+              "on-primary-fixed": "#181e00",
+              "on-tertiary": "#00363a",
+              "on-background": "#e2e2e8",
+              "secondary-fixed-dim": "#ffb5a0",
+              "on-secondary-container": "#fffbff",
+              "inverse-surface": "#e2e2e8",
+              "inverse-primary": "#556500",
+              "tertiary-container": "#7df4ff",
+              primary: "#ffffff",
+              "on-tertiary-container": "#006f77",
+              "surface-variant": "#333539",
+              "on-secondary-fixed-variant": "#862200",
+              "on-surface": "#e2e2e8",
+              tertiary: "#ffffff",
+              "surface-container": "#1e2024",
+              background: "#111317",
+              "secondary-container": "#d73b00",
+              "on-tertiary-fixed": "#002022",
+              outline: "#8f9379",
+              "on-tertiary-fixed-variant": "#004f54",
+              "on-primary": "#2b3400",
+              "error-container": "#93000a",
+              "tertiary-fixed": "#7df4ff",
+              "surface-container-high": "#282a2e",
+              "primary-fixed": "#cef11c",
+              "surface-dim": "#111317",
+              "on-secondary-fixed": "#3b0900",
+              "on-surface-variant": "#c6c9ad",
+              "primary-container": "#cef11c",
+              "on-error-container": "#ffdad6",
+              secondary: "#ffb5a0",
+              "on-primary-container": "#5a6c00",
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+            spacing: {
+              "margin-desktop": "3rem",
+              margin: "1rem",
+              "space-xs": "0.25rem",
+              "space-xl": "2.5rem",
+              "space-md": "1rem",
+              gutter: "1.25rem",
+              "margin-tablet": "2rem",
+              "space-lg": "1.5rem",
+              "gutter-desktop": "2rem",
+              "space-sm": "0.5rem",
+            },
+            fontFamily: {
+              "label-lg": ["Barlow Condensed"],
+              "label-sm": ["Barlow Condensed"],
+              "headline-xl": ["Barlow Condensed"],
+              "headline-lg-mobile": ["Barlow Condensed"],
+              "body-lg": ["Plus Jakarta Sans"],
+              "body-md": ["Plus Jakarta Sans"],
+              "body-sm": ["Plus Jakarta Sans"],
+              "label-md": ["Barlow Condensed"],
+              "headline-xl-mobile": ["Barlow Condensed"],
+              "headline-md": ["Barlow Condensed"],
+              "headline-lg": ["Barlow Condensed"],
+              "headline-sm": ["Barlow Condensed"],
+            },
+            fontSize: {
+              "label-lg": [
+                "16px",
+                {
+                  lineHeight: "20px",
+                  letterSpacing: "0.08em",
+                  fontWeight: "700",
+                },
+              ],
+              "label-sm": [
+                "11px",
+                {
+                  lineHeight: "14px",
+                  letterSpacing: "0.08em",
+                  fontWeight: "600",
+                },
+              ],
+              "headline-xl": [
+                "64px",
+                {
+                  lineHeight: "68px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "800",
+                },
+              ],
+              "headline-lg-mobile": [
+                "34px",
+                { lineHeight: "38px", letterSpacing: "0em", fontWeight: "700" },
+              ],
+              "body-lg": [
+                "18px",
+                {
+                  lineHeight: "28px",
+                  letterSpacing: "-0.01em",
+                  fontWeight: "400",
+                },
+              ],
+              "body-md": [
+                "15px",
+                { lineHeight: "24px", letterSpacing: "0em", fontWeight: "400" },
+              ],
+              "body-sm": [
+                "13px",
+                {
+                  lineHeight: "20px",
+                  letterSpacing: "0.01em",
+                  fontWeight: "400",
+                },
+              ],
+              "label-md": [
+                "13px",
+                {
+                  lineHeight: "16px",
+                  letterSpacing: "0.06em",
+                  fontWeight: "600",
+                },
+              ],
+              "headline-xl-mobile": [
+                "44px",
+                {
+                  lineHeight: "48px",
+                  letterSpacing: "-0.01em",
+                  fontWeight: "800",
+                },
+              ],
+              "headline-md": [
+                "32px",
+                { lineHeight: "36px", letterSpacing: "0em", fontWeight: "700" },
+              ],
+              "headline-lg": [
+                "48px",
+                {
+                  lineHeight: "52px",
+                  letterSpacing: "-0.01em",
+                  fontWeight: "700",
+                },
+              ],
+              "headline-sm": [
+                "24px",
+                {
+                  lineHeight: "28px",
+                  letterSpacing: "0.02em",
+                  fontWeight: "600",
+                },
+              ],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="bg-surface font-body-md text-body-md text-on-surface selection:bg-primary-container selection:text-on-primary-container"
+  >
+    <header
+      class="fixed top-0 left-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_12px_rgba(0,0,0,0.4)]"
+    >
+      <div
+        class="h-20 max-w-7xl mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop flex items-center justify-between gap-gutter"
+      >
+        <div class="flex items-center gap-space-sm">
+          <div
+            class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center"
+          >
+            <span
+              class="material-symbols-outlined text-primary-container text-[22px]"
+              >bolt</span
+            >
+          </div>
+          <span
+            class="font-headline-sm text-headline-sm uppercase tracking-wide text-primary"
+            >FITPRO <span class="text-primary-container">//</span> ELITE
+            COACHING</span
+          >
+        </div>
+        <nav
+          class="site-nav hidden xl:flex items-center gap-space-lg"
+          data-active-classes="text-primary-container font-label-lg text-label-lg"
+        >
+          <a
+            aria-current="page"
+            class="uppercase transition-colors text-primary-container font-label-lg text-label-lg"
+            data-path="landing-page"
+            href="#inicio"
+            >Início</a
+          ><a
+            class="font-label-lg text-label-lg uppercase text-on-surface-variant hover:text-on-surface transition-colors"
+            data-path="metodo"
+            href="#metodo"
+            >Método</a
+          ><a
+            class="font-label-lg text-label-lg uppercase text-on-surface-variant hover:text-on-surface transition-colors"
+            data-path="planos"
+            href="#planos"
+            >Planos</a
+          ><a
+            class="font-label-lg text-label-lg uppercase text-on-surface-variant hover:text-on-surface transition-colors"
+            data-path="resultados"
+            href="#resultados"
+            >Resultados</a
+          ><a
+            class="font-label-lg text-label-lg uppercase text-on-surface-variant hover:text-on-surface transition-colors"
+            data-path="sobre"
+            href="#sobre"
+            >Sobre</a
+          ><a
+            class="font-label-lg text-label-lg uppercase text-on-surface-variant hover:text-on-surface transition-colors"
+            data-path="faq"
+            href="#faq"
+            >FAQ</a
+          >
+        </nav>
+        <div class="flex items-center gap-space-md">
+          <a
+            class="hidden sm:inline-flex items-center justify-center px-space-lg py-space-sm rounded-full bg-primary-container text-on-primary-container font-label-lg text-label-lg uppercase tracking-wider transition-transform duration-150 active:scale-95"
+            href="#planos"
+            >Agendar Aula Experimental</a
+          >
+          <div
+            class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"
+          >
+            <span class="material-symbols-outlined text-on-primary text-[18px]"
+              >person</span
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="w-full pt-20 bg-surface min-h-screen">
+      <div
+        class="flex flex-col w-full text-on-surface selection:bg-primary-container selection:text-on-primary-container"
+      >
+        <!-- ============================================================ -->
+        <!-- HERO SECTION (RF-01)                                         -->
+        <!-- ============================================================ -->
+        <section
+          class="section-block relative w-full overflow-hidden bg-surface-container-lowest"
+          id="inicio"
+        >
+          <!-- Ambient glow gradients -->
+          <div
+            class="absolute -top-32 left-1/4 w-96 h-96 bg-primary-container/10 rounded-full blur-3xl pointer-events-none"
+          ></div>
+          <div
+            class="absolute top-1/2 -right-24 w-[30rem] h-[30rem] bg-secondary-container/10 rounded-full blur-3xl pointer-events-none"
+          ></div>
+          <div
+            class="max-w-7xl mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop pt-space-lg pb-space-xl lg:py-space-xl"
+          >
+            <div
+              class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-center"
+            >
+              <!-- Left Column: Copy & CTAs -->
+              <div
+                class="lg:col-span-7 flex flex-col items-start gap-space-md z-10"
+              >
+                <!-- Scarcity Badge -->
+                <div
+                  class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-high shadow-sm"
+                >
+                  <span
+                    class="w-2 h-2 rounded-full bg-secondary-container animate-ping"
+                  ></span>
+                  <span
+                    class="font-label-md text-label-md uppercase tracking-wider text-secondary"
+                    >🔥 VAGAS LIMITADAS PARA ESTE MÊS</span
+                  >
+                </div>
+                <!-- Hero Main Title -->
+                <h1
+                  class="font-headline-xl text-headline-xl uppercase text-primary tracking-tight leading-[1.05]"
+                >
+                  TRANSFORME SEU CORPO COM UM
+                  <span
+                    class="text-primary-container underline decoration-primary-container/30 underline-offset-8"
+                    >MÉTODO COMPROVADO</span
+                  >
+                  E INDIVIDUALIZADO
+                </h1>
+                <!-- Subtitle / Value Proposition -->
+                <p
+                  class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl"
+                >
+                  Hipertrofia consistente, emagrecimento sustentável e
+                  longevidade articular. Resultados reais sem dietas restritivas
+                  ou treinos genéricos de gaveta.
+                </p>
+                <!-- Primary CTA + Assurance -->
+                <div
+                  class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-md w-full sm:w-auto pt-space-xs"
+                >
+                  <a
+                    class="inline-flex items-center justify-center gap-space-xs px-space-xl py-space-md rounded-full bg-primary-container text-on-primary-container font-label-lg text-label-lg uppercase tracking-wider shadow-lg transition-transform duration-200 hover:scale-[1.03] active:scale-95 text-center"
+                    href="#diagnostico"
+                  >
+                    <span>QUERO COMEÇAR AGORA</span>
+                    <span class="material-symbols-outlined text-[20px]"
+                      >arrow_forward</span
+                    >
+                  </a>
+                  <div
+                    class="flex items-center gap-space-xs text-on-surface-variant justify-center sm:justify-start"
+                  >
+                    <span
+                      class="material-symbols-outlined text-primary-container text-[20px]"
+                      >verified_user</span
+                    >
+                    <span
+                      class="font-label-md text-label-md uppercase tracking-wide text-on-surface"
+                      >Garantia incondicional de 7 dias</span
+                    >
+                  </div>
+                </div>
+                <!-- Modality Pills -->
+                <div
+                  class="flex flex-wrap items-center gap-space-xs pt-space-sm"
+                >
+                  <span
+                    class="px-space-sm py-space-xs rounded-full bg-surface-container font-label-sm text-label-sm uppercase text-on-surface flex items-center gap-1"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[14px] text-primary-container"
+                      >fitness_center</span
+                    >
+                    Personal Presencial
+                  </span>
+                  <span
+                    class="px-space-sm py-space-xs rounded-full bg-surface-container font-label-sm text-label-sm uppercase text-on-surface flex items-center gap-1"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[14px] text-tertiary-fixed-dim"
+                      >phonelink</span
+                    >
+                    Consultoria 100% Online
+                  </span>
+                  <span
+                    class="px-space-sm py-space-xs rounded-full bg-surface-container font-label-sm text-label-sm uppercase text-on-surface flex items-center gap-1"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[14px] text-secondary"
+                      >analytics</span
+                    >
+                    Avaliação por Bioimpedância
+                  </span>
+                </div>
+                <!-- Social Proof Snapshot -->
+                <div class="flex items-center gap-space-md pt-space-xs">
+                  <div class="flex -space-x-2">
+                    <div
+                      class="w-10 h-10 rounded-full bg-surface-container-high overflow-hidden shadow-md"
+                    >
+                      <img
+                        class="w-full h-full object-cover"
+                        data-alt="Close-up portrait of athletic male client smiling after training, gym lighting, sharp high contrast photography."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfZS4j0Pmj03g5XoSyJctNMnPnjncQxhCxQERpKjA0k4_hjxMrVWpJfTTqpmWjyjNJdobljJWJRN2jVcjjZgPna1UXZXZJZcPlJgBJm7VQbLkw59gBS_oyIQHRSfsy42eBaUdl4HXcgqr28ez62-3ZThVHlRCRZgmVy7lyvXBbV8POgHMsRF9ogiVuJyEGK9D7wbi12A5DQ1Rmq8BVJeH_fVFfSCsW9azjTQdWEUizKr1fYb98uaSI3Q"
+                      />
+                    </div>
+                    <div
+                      class="w-10 h-10 rounded-full bg-surface-container-high overflow-hidden shadow-md"
+                    >
+                      <img
+                        class="w-full h-full object-cover"
+                        data-alt="Portrait of fit female client in athletic tank top after strength session, dark studio background, neon ambient glow."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuChasSNSNnHQBBZo5GIbrChp0iQq3StGbodq_PW6EACkzIt-BCzv0yjJqGnvuK5G5EbpJw4G5vtn4keunBhrJxc72SqqSzQNAwkeP0NNINAsyFKCquXIldO4bH3NXX9LjO48nWoijewaxYIcVZZI2tIpZThM6I45mu1tU8robJoAvCw1AvKvyXz3FFA84UfHSN2ESbhWsVy9fpzl6c6mJpdOcq-d3xBVSBWJWQ9j9Yy3jymsrSohnlw1g"
+                      />
+                    </div>
+                    <div
+                      class="w-10 h-10 rounded-full bg-surface-container-high overflow-hidden shadow-md"
+                    >
+                      <img
+                        class="w-full h-full object-cover"
+                        data-alt="Portrait of determined runner client sweating with sports headband, cinematic side rim lighting."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAy1CzbVBOTp0T1cW1nfdcY2z9lCPqI7c19E85251xD0PziNPdYkT5ErScsYuhgk_rUvsG2Wq7n9cHITfoi8kQ1UtFs9dauwj_gZUx7_LiFD_qci3NdzsWDB1lPPMZIv2NeauL0eztJfDCnFOiCkHILPn_TVUbobLLMk8-4nUdVC7Li96aTPKElDjjo4onQ0AUznbBJnEd0Jo-1ndRKYcgjjcMiFlcQkHop_5FFAon0NpFPGKFcST0aQ"
+                      />
+                    </div>
+                  </div>
+                  <div class="flex flex-col">
+                    <div class="flex items-center text-primary-container">
+                      <span class="material-symbols-outlined text-[16px]"
+                        >star</span
+                      >
+                      <span class="material-symbols-outlined text-[16px]"
+                        >star</span
+                      >
+                      <span class="material-symbols-outlined text-[16px]"
+                        >star</span
+                      >
+                      <span class="material-symbols-outlined text-[16px]"
+                        >star</span
+                      >
+                      <span class="material-symbols-outlined text-[16px]"
+                        >star</span
+                      >
+                      <span
+                        class="font-label-lg text-label-lg text-primary ml-1"
+                        >4.9/5</span
+                      >
+                    </div>
+                    <span
+                      class="font-body-sm text-body-sm text-on-surface-variant"
+                      >Mais de 850 alunos acompanhados</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Right Column: Athlete Hero Image + Biometric Float Widget -->
+              <div
+                class="lg:col-span-5 relative flex justify-center mt-space-md lg:mt-0"
+              >
+                <div
+                  class="relative w-full max-w-md lg:max-w-none rounded-xl overflow-hidden bg-surface-container shadow-2xl"
+                >
+                  <!-- Dynamic Athletic Photo Placeholder -->
+                  <img
+                    class="w-full h-[520px] object-cover object-top"
+                    data-alt="Ultra high-definition portrait of personal trainer Lucas Alcantara, athletic muscular build in compression performance dark gray t-shirt, cinematic rim lighting with electric lime and amber edge reflections, gym backdrop blurred with barbells and turf."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEL4sC8VDHC8PcTOjBS2YqRjRTJgkMwkxp_4Xvx3FBdNxhYfoNFpVMFLr230ozWLqVUYPwpaYSIKruHG64DccCtQnFy58vjuOOqBm6sXOx-s30A00pe-KDbTjI6EBS8Yc-0sh9mLJMKvKWziGlUjGEVnzCb9XLUMJZifDpKfuNRqm6Wp-x_rwovOpviGX_vjHZhq4ehk6hMzVgS20EoTRTWdfzatvIsxE8D7t495ISBqSGcXKu8-rfww"
+                  />
+                  <div
+                    class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"
+                  ></div>
+                  <!-- Floating Biometric Telemetry Card -->
+                  <div
+                    class="absolute bottom-6 left-6 right-6 p-space-md rounded-xl bg-surface-container-high/90 backdrop-blur-md shadow-xl flex items-center justify-between"
+                  >
+                    <div class="flex items-center gap-space-sm">
+                      <div
+                        class="w-10 h-10 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary-container"
+                      >
+                        <span class="material-symbols-outlined text-[24px]"
+                          >ecg_heart</span
+                        >
+                      </div>
+                      <div>
+                        <span
+                          class="font-label-sm text-label-sm uppercase text-on-surface-variant block"
+                          >Status Metabólico</span
+                        >
+                        <span
+                          class="font-headline-sm text-headline-sm uppercase text-primary"
+                          >Zona Ótima // 164 BPM</span
+                        >
+                      </div>
+                    </div>
+                    <div class="text-right">
+                      <span
+                        class="font-label-sm text-label-sm uppercase text-secondary block"
+                        >Eficiência</span
+                      >
+                      <span
+                        class="font-headline-sm text-headline-sm text-primary-container"
+                        >+34% VO2</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ============================================================ -->
+        <!-- NÚMEROS DE IMPACTO & MÉTRICAS (Wireframe item 3)             -->
+        <!-- ============================================================ -->
+        <section class="section-block w-full bg-surface-container py-space-xl">
+          <div
+            class="max-w-7xl mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop"
+          >
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-gutter">
+              <!-- Stat 1 -->
+              <div
+                class="flex flex-col p-space-lg rounded-xl bg-surface-container-low shadow-sm"
+              >
+                <span
+                  class="font-headline-xl text-headline-xl uppercase text-primary-container leading-none"
+                  >+850</span
+                >
+                <span
+                  class="font-label-lg text-label-lg uppercase tracking-wider text-primary mt-space-xs"
+                  >Vidas Transformadas</span
+                >
+                <p
+                  class="font-body-sm text-body-sm text-on-surface-variant mt-1"
+                >
+                  Resultados mensurados por bioimpedância e exames
+                  laboratoriais.
+                </p>
+              </div>
+              <!-- Stat 2 -->
+              <div
+                class="flex flex-col p-space-lg rounded-xl bg-surface-container-low shadow-sm"
+              >
+                <span
+                  class="font-headline-xl text-headline-xl uppercase text-primary leading-none"
+                  >98.4%</span
+                >
+                <span
+                  class="font-label-lg text-label-lg uppercase tracking-wider text-primary mt-space-xs"
+                  >Taxa de Satisfação</span
+                >
+                <p
+                  class="font-body-sm text-body-sm text-on-surface-variant mt-1"
+                >
+                  Adesão comprovada de alunos no plano de 12 meses.
+                </p>
+              </div>
+              <!-- Stat 3 -->
+              <div
+                class="flex flex-col p-space-lg rounded-xl bg-surface-container-low shadow-sm"
+              >
+                <span
+                  class="font-headline-xl text-headline-xl uppercase text-secondary-container leading-none"
+                  >+11</span
+                >
+                <span
+                  class="font-label-lg text-label-lg uppercase tracking-wider text-primary mt-space-xs"
+                  >Anos de Experiência</span
+                >
+                <p
+                  class="font-body-sm text-body-sm text-on-surface-variant mt-1"
+                >
+                  Prática diária em salão de pesos, reabilitação e atletas
+                  amadores.
+                </p>
+              </div>
+              <!-- Stat 4 -->
+              <div
+                class="flex flex-col p-space-lg rounded-xl bg-surface-container-low shadow-sm"
+              >
+                <div
+                  class="flex items-center gap-space-xs text-primary-container"
+                >
+                  <span class="material-symbols-outlined text-[28px]"
+                    >verified</span
+                  >
+                  <span
+                    class="font-headline-md text-headline-md uppercase text-primary leading-none"
+                    >038291-G/SP</span
+                  >
+                </div>
+                <span
+                  class="font-label-lg text-label-lg uppercase tracking-wider text-primary mt-space-xs"
+                  >Registro Oficial CREF</span
+                >
+                <p
+                  class="font-body-sm text-body-sm text-on-surface-variant mt-1"
+                >
+                  Profissional graduado e pós-graduado com atuação ética e
+                  regulamentada.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ============================================================ -->
+        <!-- METODOLOGIA & DIFERENCIAIS (RF-02)                           -->
+        <!-- ============================================================ -->
+        <section class="section-block w-full bg-surface py-space-xl" id="metodo">
+          <div
+            class="max-w-7xl mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop flex flex-col gap-space-xl"
+          >
+            <!-- Section Header -->
+            <div
+              class="flex flex-col md:flex-row md:items-end justify-between gap-space-md"
+            >
+              <div class="max-w-2xl flex flex-col gap-space-xs">
+                <div
+                  class="inline-flex items-center gap-space-xs text-primary-container font-label-md text-label-md uppercase tracking-wider"
+                >
+                  <span class="material-symbols-outlined text-[16px]"
+                    >science</span
+                  >
+                  Engenharia do Treinamento
+                </div>
+                <h2
+                  class="font-headline-lg text-headline-lg uppercase text-primary"
+                >
+                  O MÉTODO FITPRO: CIÊNCIA APLICADA AO SEU CORPO
+                </h2>
+                <p class="font-body-md text-body-md text-on-surface-variant">
+                  Abandone a adivinhação. Cada série, intervalo e repetição é
+                  calculada milimetricamente para o seu biotipo, rotina
+                  profissional e capacidade de recuperação.
+                </p>
+              </div>
+              <div class="hidden lg:block text-right">
+                <span
+                  class="font-label-sm text-label-sm uppercase text-on-surface-variant"
+                  >Protocolo Modular</span
+                >
+                <div
+                  class="font-headline-sm text-headline-sm uppercase text-primary-container"
+                >
+                  FASE // PROGRESSÃO LINEAR
+                </div>
+              </div>
+            </div>
+            <!-- 4 Pillars Grid -->
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter"
+            >
+              <!-- Pilar 1 -->
+              <div
+                class="p-space-lg rounded-xl bg-surface-container flex flex-col gap-space-md shadow-md transition-all duration-200 hover:-translate-y-1"
+              >
+                <div
+                  class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-container"
+                >
+                  <span class="material-symbols-outlined text-[28px]"
+                    >monitoring</span
+                  >
+                </div>
+                <div class="flex flex-col gap-space-xs">
+                  <span
+                    class="font-label-sm text-label-sm uppercase text-primary-container"
+                    >Pilar 01</span
+                  >
+                  <h3
+                    class="font-headline-sm text-headline-sm uppercase text-primary"
+                  >
+                    Periodização Científica
+                  </h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">
+                    Estruturação em macrociclos e microciclos: força máxima,
+                    hipertrofia tensional e deload programado para evitar lesões
+                    e estagnação crônica.
+                  </p>
+                </div>
+                <div
+                  class="mt-auto pt-space-xs flex items-center gap-space-xs font-label-sm text-label-sm uppercase text-primary"
+                >
+                  <span
+                    class="material-symbols-outlined text-[16px] text-primary-container"
+                    >check_circle</span
+                  >
+                  RPE &amp; RIR Monitorados
+                </div>
+              </div>
+              <!-- Pilar 2 -->
+              <div
+                class="p-space-lg rounded-xl bg-surface-container flex flex-col gap-space-md shadow-md transition-all duration-200 hover:-translate-y-1"
+              >
+                <div
+                  class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-container"
+                >
+                  <span class="material-symbols-outlined text-[28px]"
+                    >support_agent</span
+                  >
+                </div>
+                <div class="flex flex-col gap-space-xs">
+                  <span
+                    class="font-label-sm text-label-sm uppercase text-primary-container"
+                    >Pilar 02</span
+                  >
+                  <h3
+                    class="font-headline-sm text-headline-sm uppercase text-primary"
+                  >
+                    Suporte 24/7 via WhatsApp
+                  </h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">
+                    Canal direto com o treinador sem robôs. Envie vídeos
+                    executando exercícios na academia do prédio ou hotel e
+                    receba correções pontuais.
+                  </p>
+                </div>
+                <div
+                  class="mt-auto pt-space-xs flex items-center gap-space-xs font-label-sm text-label-sm uppercase text-primary"
+                >
+                  <span
+                    class="material-symbols-outlined text-[16px] text-primary-container"
+                    >check_circle</span
+                  >
+                  Resposta em tempo real
+                </div>
+              </div>
+              <!-- Pilar 3 -->
+              <div
+                class="p-space-lg rounded-xl bg-surface-container flex flex-col gap-space-md shadow-md transition-all duration-200 hover:-translate-y-1"
+              >
+                <div
+                  class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary"
+                >
+                  <span class="material-symbols-outlined text-[28px]"
+                    >restaurant</span
+                  >
+                </div>
+                <div class="flex flex-col gap-space-xs">
+                  <span
+                    class="font-label-sm text-label-sm uppercase text-secondary"
+                    >Pilar 03</span
+                  >
+                  <h3
+                    class="font-headline-sm text-headline-sm uppercase text-primary"
+                  >
+                    Ajuste Nutricional Flexível
+                  </h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">
+                    Estratégias de cálculo de macronutrientes alinhadas à
+                    intensidade de cada dia de treino, sem cortes drásticos que
+                    sabotam a vida social.
+                  </p>
+                </div>
+                <div
+                  class="mt-auto pt-space-xs flex items-center gap-space-xs font-label-sm text-label-sm uppercase text-primary"
+                >
+                  <span
+                    class="material-symbols-outlined text-[16px] text-primary-container"
+                    >check_circle</span
+                  >
+                  Adesão de longo prazo
+                </div>
+              </div>
+              <!-- Pilar 4 -->
+              <div
+                class="p-space-lg rounded-xl bg-surface-container flex flex-col gap-space-md shadow-md transition-all duration-200 hover:-translate-y-1"
+              >
+                <div
+                  class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary-fixed-dim"
+                >
+                  <span class="material-symbols-outlined text-[28px]"
+                    >smart_display</span
+                  >
+                </div>
+                <div class="flex flex-col gap-space-xs">
+                  <span
+                    class="font-label-sm text-label-sm uppercase text-tertiary-fixed-dim"
+                    >Pilar 04</span
+                  >
+                  <h3
+                    class="font-headline-sm text-headline-sm uppercase text-primary"
+                  >
+                    App Exclusivo com Vídeos
+                  </h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">
+                    Acesso ao aplicativo proprietário com demonstração 4K em
+                    múltiplos ângulos de cada exercício, cronômetro de descanso
+                    e registro de cargas.
+                  </p>
+                </div>
+                <div
+                  class="mt-auto pt-space-xs flex items-center gap-space-xs font-label-sm text-label-sm uppercase text-primary"
+                >
+                  <span
+                    class="material-symbols-outlined text-[16px] text-primary-container"
+                    >check_circle</span
+                  >
+                  iOS &amp; Android
+                </div>
+              </div>
+            </div>
+            <!-- Interactive Biometric Telemetry Showcase Bento -->
+            <div
+              class="rounded-xl bg-surface-container-high p-space-lg lg:p-space-xl shadow-xl"
+            >
+              <div
+                class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center"
+              >
+                <div class="lg:col-span-5 flex flex-col gap-space-sm">
+                  <span
+                    class="font-label-sm text-label-sm uppercase text-primary-container tracking-wider"
+                    >Métrica de Evolução Semanal</span
+                  >
+                  <h4
+                    class="font-headline-md text-headline-md uppercase text-primary"
+                  >
+                    DADOS REAIS SUBSTITUEM ACHISMOS
+                  </h4>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">
+                    Nosso dashboard registra a sobrecarga progressiva (volume de
+                    treino total = séries × repetições × carga). Você visualiza
+                    seus avanços gráficos semana após semana.
+                  </p>
+                  <div class="flex items-center gap-space-md pt-space-xs">
+                    <div
+                      class="p-space-sm rounded-lg bg-surface-container text-center flex-1"
+                    >
+                      <span
+                        class="font-headline-sm text-headline-sm text-primary-container block"
+                        >+18.2%</span
+                      >
+                      <span
+                        class="font-label-sm text-label-sm uppercase text-on-surface-variant"
+                        >Sobrecarga Mensal</span
+                      >
+                    </div>
+                    <div
+                      class="p-space-sm rounded-lg bg-surface-container text-center flex-1"
+                    >
+                      <span
+                        class="font-headline-sm text-headline-sm text-secondary-container block"
+                        >-4.5%</span
+                      >
+                      <span
+                        class="font-label-sm text-label-sm uppercase text-on-surface-variant"
+                        >Gordura Corporal</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- Inline Telemetry SVG Chart -->
+                <div
+                  class="lg:col-span-7 flex flex-col gap-space-xs bg-surface-container-lowest p-space-md rounded-xl"
+                >
+                  <div
+                    class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm uppercase"
+                  >
+                    <span
+                      >Curva de Volume de Carga (kg acumulados / semana)</span
+                    >
+                    <span class="text-primary-container"
+                      >Semana 01 -&gt; Semana 12</span
+                    >
+                  </div>
+                  <!-- SVG Progress Chart -->
+                  <svg
+                    class="w-full h-40 text-primary-container"
+                    fill="none"
+                    viewbox="0 0 500 160"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <defs>
+                      <lineargradient id="volGrad" x1="0" x2="0" y1="0" y2="1">
+                        <stop
+                          offset="0%"
+                          stop-color="#cef11c"
+                          stop-opacity="0.35"
+                        ></stop>
+                        <stop
+                          offset="100%"
+                          stop-color="#cef11c"
+                          stop-opacity="0.0"
+                        ></stop>
+                      </lineargradient>
+                    </defs>
+                    <!-- Grid lines -->
+                    <line
+                      stroke="#1e2024"
+                      stroke-dasharray="4 4"
+                      stroke-width="1"
+                      x1="0"
+                      x2="500"
+                      y1="40"
+                      y2="40"
+                    ></line>
+                    <line
+                      stroke="#1e2024"
+                      stroke-dasharray="4 4"
+                      stroke-width="1"
+                      x1="0"
+                      x2="500"
+                      y1="80"
+                      y2="80"
+                    ></line>
+                    <line
+                      stroke="#1e2024"
+                      stroke-dasharray="4 4"
+                      stroke-width="1"
+                      x1="0"
+                      x2="500"
+                      y1="120"
+                      y2="120"
+                    ></line>
+                    <!-- Area Fill -->
+                    <path
+                      d="M 10 130 Q 80 120 140 100 T 260 75 T 380 45 T 490 20 L 490 150 L 10 150 Z"
+                      fill="url(#volGrad)"
+                    ></path>
+                    <!-- Trajectory Line -->
+                    <path
+                      d="M 10 130 Q 80 120 140 100 T 260 75 T 380 45 T 490 20"
+                      stroke="#cef11c"
+                      stroke-linecap="round"
+                      stroke-width="3"
+                    ></path>
+                    <!-- Active Data Nodes -->
+                    <circle cx="10" cy="130" fill="#cef11c" r="4"></circle>
+                    <circle cx="140" cy="100" fill="#cef11c" r="4"></circle>
+                    <circle cx="260" cy="75" fill="#cef11c" r="4"></circle>
+                    <circle cx="380" cy="45" fill="#cef11c" r="4"></circle>
+                    <circle
+                      class="animate-ping"
+                      cx="490"
+                      cy="20"
+                      fill="#cef11c"
+                      r="6"
+                    ></circle>
+                    <circle
+                      cx="490"
+                      cy="20"
+                      fill="#111317"
+                      r="5"
+                      stroke="#cef11c"
+                      stroke-width="2"
+                    ></circle>
+                  </svg>
+                  <div
+                    class="flex justify-between font-label-sm text-label-sm text-on-surface-variant pt-1"
+                  >
+                    <span>Sem 01 (14.200 kg)</span>
+                    <span>Sem 04 (18.600 kg)</span>
+                    <span>Sem 08 (24.100 kg)</span>
+                    <span class="text-primary-container font-bold"
+                      >Sem 12 (31.450 kg - NOVO PR)</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ============================================================ -->
+        <!-- PLANOS & SERVIÇOS (RF-03)                                    -->
+        <!-- ============================================================ -->
+        <section
+          class="w-full bg-surface-container-lowest py-space-xl"
+          id="planos"
+        >
+          <div
+            class="max-w-7xl mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop flex flex-col gap-space-xl"
+          >
+            <!-- Section Headline -->
+            <div
+              class="text-center max-w-2xl mx-auto flex flex-col items-center gap-space-xs"
+            >
+              <span
+                class="font-label-md text-label-md uppercase tracking-widest text-primary-container"
+                >Formatos de Acompanhamento</span
+              >
+              <h2
+                class="font-headline-lg text-headline-lg uppercase text-primary"
+              >
+                ESCOLHA SEU PROTOCOLO DE TRANSFORMAÇÃO
+              </h2>
+              <p class="font-body-md text-body-md text-on-surface-variant">
+                Planos transparentes, sem multas contratuais abusivas. Selecione
+                a intensidade ideal para a sua rotina.
+              </p>
+            </div>
+            <!-- Pricing Cards 3-Column Grid -->
+            <div
+              class="grid grid-cols-1 lg:grid-cols-3 gap-gutter-desktop items-stretch"
+            >
+              <!-- PLANO 1: Consultoria Online Premium -->
+              <div
+                class="p-space-lg rounded-xl bg-surface-container flex flex-col justify-between shadow-lg relative"
+              >
+                <div>
+                  <div class="flex items-center justify-between">
+                    <span
+                      class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant"
+                      >Digital Completo</span
+                    >
+                    <span
+                      class="material-symbols-outlined text-primary-container text-[22px]"
+                      >public</span
+                    >
+                  </div>
+                  <h3
+                    class="font-headline-md text-headline-md uppercase text-primary mt-space-xs"
+                  >
+                    Consultoria Online VIP
+                  </h3>
+                  <p
+                    class="font-body-sm text-body-sm text-on-surface-variant mt-1"
+                  >
+                    Perfeito para quem treina em qualquer academia ou condomínio
+                    do Brasil e do mundo.
+                  </p>
+                  <div class="py-space-md flex items-baseline gap-space-xs">
+                    <span
+                      class="font-label-sm text-label-sm text-on-surface-variant"
+                      >R$</span
+                    >
+                    <span
+                      class="font-headline-xl text-headline-xl uppercase text-primary"
+                      >289</span
+                    >
+                    <span
+                      class="font-label-md text-label-md text-on-surface-variant"
+                      >/mês</span
+                    >
+                  </div>
+                  <!-- Perks List -->
+                  <ul class="flex flex-col gap-space-xs text-body-sm">
+                    <li class="flex items-start gap-space-xs">
+                      <span
+                        class="material-symbols-outlined text-primary-container text-[18px] flex-shrink-0"
+                        >check_circle</span
+                      >
+                      <span>Ficha de treino individualizada no app FITPRO</span>
+                    </li>
+                    <li class="flex items-start gap-space-xs">
+                      <span
+                        class="material-symbols-outlined text-primary-container text-[18px] flex-shrink-0"
+                        >check_circle</span
+                      >
+                      <span>Análise de vídeos com correção biomecânica</span>
+                    </li>
+                    <li class="flex items-start gap-space-xs">
+                      <span
+                        class="material-symbols-outlined text-primary-container text-[18px] flex-shrink-0"
+                        >check_circle</span
+                      >
+                      <span>Ajuste e troca de treinos a cada 4 semanas</span>
+                    </li>
+                    <li class="flex items-start gap-space-xs">
+                      <span
+                        class="material-symbols-outlined text-primary-container text-[18px] flex-shrink-0"
+                        >check_circle</span
+                      >
+                      <span>Suporte direto com Lucas via WhatsApp</span>
+                    </li>
+                    <li class="flex items-start gap-space-xs">
+                      <span
+                        class="material-symbols-outlined text-primary-container text-[18px] flex-shrink-0"
+                        >check_circle</span
+                      >
+                      <span
+                        >Orientações de suplementação e nutrição flexível</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="pt-space-lg mt-space-md">
+                  <a
+                    class="w-full inline-flex items-center justify-center py-space-sm rounded-full bg-surface-container-high text-primary hover:bg-primary hover:text-surface font-label-lg text-label-lg uppercase tracking-wider transition-colors"
+                    href="#diagnostico"
+                  >
+                    Garantir Consultoria Online
+                  </a>
+                </div>
+              </div>
+              <!-- PLANO 2: Personal Presencial (DESTAQUE 'MAIS PROCURADO') -->
+              <div
+                class="p-space-lg rounded-xl bg-surface-container-high flex flex-col justify-between shadow-2xl relative lg:-translate-y-3"
+              >
+                <!-- Top Tag -->
+                <div
+                  class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-space-md py-0.5 rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md uppercase tracking-wider font-bold shadow-md"
+                >
+                  ★ MAIS PROCURADO
+                </div>
+                <div>
+                  <div class="flex items-center justify-between pt-space-xs">
+                    <span
+                      class="font-label-md text-label-md uppercase tracking-wider text-primary-container"
+                      >Atendimento 1-on-1 Exclusivo</span
+                    >
+                    <span
+                      class="material-symbols-outlined text-primary-container text-[24px]"
+                      >workspace_premium</span
+                    >
+                  </div>
+                  <h3
+                    class="font-headline-md text-headline-md uppercase text-primary mt-space-xs"
+                  >
+                    Personal Presencial VIP
+                  </h3>
+                  <p
+                    class="font-body-sm text-body-sm text-on-surface-variant mt-1"
+                  >
+                    Supervisão física integral lado a lado, ajuste de carga
+                    seguro e estímulo extremo.
+                  </p>
+                  <div class="py-space-md flex items-baseline gap-space-xs">
+                    <span
+                      class="font-label-sm text-label-sm text-on-surface-variant"
+                      >R$</span
+                    >
+                    <span
+                      class="font-headline-xl text-headline-xl uppercase text-primary-container"
+                      >1.490</span
+                    >
+                    <span
+                      class="font-label-md text-label-md text-on-surface-variant"
+                      >/mês (3x/semana)</span
+                    >
+                  </div>
+                  <!-- Perks List -->
+                  <ul class="flex flex-col gap-space-xs text-body-sm">
+                    <li
+                      class="flex items-start gap-space-xs font-semibold text-primary"
+                    >
+                      <span
+                        class="material-symbols-outlined text-primary-container text-[18px] flex-shrink-0"
+                        >verified</span
+                      >
+                      <span
+                        >Treinador focado exclusivamente em você no
+                        horário</span
+                      >
+                    </li>
+                    <li
+                      class="flex items-start gap-space-xs font-semibold text-primary"
+                    >
+                      <span
+                        class="material-symbols-outlined text-primary-container text-[18px] flex-shrink-0"
+                        >verified</span
+                      >
+                      <span
+                        >Avaliação física presencial com Bioimpedância
+                        mensal</span
+                      >
+                    </li>
+                    <li class="flex items-start gap-space-xs">
+                      <span
+                        class="material-symbols-outlined text-primary-container text-[18px] flex-shrink-0"
+                        >check_circle</span
+                      >
+                      <span
+                        >Correção tátil de postura e técnica em tempo real</span
+                      >
+                    </li>
+                    <li class="flex items-start gap-space-xs">
+                      <span
+                        class="material-symbols-outlined text-primary-container text-[18px] flex-shrink-0"
+                        >check_circle</span
+                      >
+                      <span
+                        >Acesso total ao app de treinos e métricas FITPRO</span
+                      >
+                    </li>
+                    <li class="flex items-start gap-space-xs">
+                      <span
+                        class="material-symbols-outlined text-primary-container text-[18px] flex-shrink-0"
+                        >check_circle</span
+                      >
+                      <span
+                        >Atendimento nas principais academias de SP ou
+                        condomínio</span
+                      >
+                    </li>
+                    <li class="flex items-start gap-space-xs">
+                      <span
+                        class="material-symbols-outlined text-primary-container text-[18px] flex-shrink-0"
+                        >check_circle</span
+                      >
+                      <span
+                        >Kit Atleta Exclusivo FITPRO (Squeeze + Camiseta
+                        dry-fit)</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="pt-space-lg mt-space-md flex flex-col gap-space-xs">
+                  <a
+                    class="w-full inline-flex items-center justify-center py-space-md rounded-full bg-primary-container text-on-primary-container font-label-lg text-label-lg uppercase tracking-wider shadow-lg transition-transform hover:scale-105 active:scale-95 text-center"
+                    href="#diagnostico"
+                  >
+                    Solicitar Vaga Presencial
+                  </a>
+                  <span
+                    class="font-label-sm text-label-sm text-center text-on-surface-variant"
+                    >Apenas 3 horários disponíveis para este turno</span
+                  >
+                </div>
+              </div>
+              <!-- PLANO 3: Duplas / Pequenos Grupos -->
+              <div
+                class="p-space-lg rounded-xl bg-surface-container flex flex-col justify-between shadow-lg relative"
+              >
+                <div>
+                  <div class="flex items-center justify-between">
+                    <span
+                      class="font-label-md text-label-md uppercase tracking-wider text-secondary"
+                      >Parceria &amp; Foco</span
+                    >
+                    <span
+                      class="material-symbols-outlined text-secondary-container text-[22px]"
+                      >groups</span
+                    >
+                  </div>
+                  <h3
+                    class="font-headline-md text-headline-md uppercase text-primary mt-space-xs"
+                  >
+                    Treino em Dupla VIP
+                  </h3>
+                  <p
+                    class="font-body-sm text-body-sm text-on-surface-variant mt-1"
+                  >
+                    Treine com seu parceiro(a), amigo ou colega. Mesma precisão
+                    técnica com economia compartilhada.
+                  </p>
+                  <div class="py-space-md flex items-baseline gap-space-xs">
+                    <span
+                      class="font-label-sm text-label-sm text-on-surface-variant"
+                      >R$</span
+                    >
+                    <span
+                      class="font-headline-xl text-headline-xl uppercase text-primary"
+                      >890</span
+                    >
+                    <span
+                      class="font-label-md text-label-md text-on-surface-variant"
+                      >/mês por pessoa</span
+                    >
+                  </div>
+                  <!-- Perks List -->
+                  <ul class="flex flex-col gap-space-xs text-body-sm">
+                    <li class="flex items-start gap-space-xs">
+                      <span
+                        class="material-symbols-outlined text-primary-container text-[18px] flex-shrink-0"
+                        >check_circle</span
+                      >
+                      <span
+                        >Periodização individualizada para cada um dos
+                        dois</span
+                      >
+                    </li>
+                    <li class="flex items-start gap-space-xs">
+                      <span
+                        class="material-symbols-outlined text-primary-container text-[18px] flex-shrink-0"
+                        >check_circle</span
+                      >
+                      <span
+                        >Bioimpedância e análise postural de ambos os
+                        alunos</span
+                      >
+                    </li>
+                    <li class="flex items-start gap-space-xs">
+                      <span
+                        class="material-symbols-outlined text-primary-container text-[18px] flex-shrink-0"
+                        >check_circle</span
+                      >
+                      <span>Competitividade saudável e adesão 2x maior</span>
+                    </li>
+                    <li class="flex items-start gap-space-xs">
+                      <span
+                        class="material-symbols-outlined text-primary-container text-[18px] flex-shrink-0"
+                        >check_circle</span
+                      >
+                      <span>Flexibilidade de horário combinado</span>
+                    </li>
+                    <li class="flex items-start gap-space-xs">
+                      <span
+                        class="material-symbols-outlined text-primary-container text-[18px] flex-shrink-0"
+                        >check_circle</span
+                      >
+                      <span
+                        >App FITPRO independente para cada participante</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="pt-space-lg mt-space-md">
+                  <a
+                    class="w-full inline-flex items-center justify-center py-space-sm rounded-full bg-surface-container-high text-primary hover:bg-primary hover:text-surface font-label-lg text-label-lg uppercase tracking-wider transition-colors"
+                    href="#diagnostico"
+                  >
+                    Inscrever Minha Dupla
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ============================================================ -->
+        <!-- PROVA SOCIAL & RESULTADOS ANTES/DEPOIS (RF-04)               -->
+        <!-- ============================================================ -->
+        <section class="w-full bg-surface py-space-xl" id="resultados">
+          <div
+            class="max-w-7xl mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop flex flex-col gap-space-xl"
+          >
+            <div
+              class="flex flex-col md:flex-row md:items-end justify-between gap-space-md"
+            >
+              <div>
+                <span
+                  class="font-label-md text-label-md uppercase tracking-wider text-primary-container"
+                  >Transformações Comprovadas</span
+                >
+                <h2
+                  class="font-headline-lg text-headline-lg uppercase text-primary"
+                >
+                  HISTÓRIAS REAIS DE QUEM SAIU DA INÉRCIA
+                </h2>
+              </div>
+              <p
+                class="font-body-sm text-body-sm text-on-surface-variant max-w-md"
+              >
+                Sem edição, sem pós-produção enganosa. Resultados de alunos que
+                aplicaram a metodologia de sobrecarga progressiva com
+                consistência.
+              </p>
+            </div>
+            <!-- Transformations Cards Grid -->
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter"
+            >
+              <!-- Case 1 -->
+              <div
+                class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-md shadow-md"
+              >
+                <div
+                  class="grid grid-cols-2 gap-2 h-64 rounded-lg overflow-hidden relative"
+                >
+                  <div class="relative h-full">
+                    <img
+                      class="w-full h-full object-cover"
+                      data-alt="Athletic client before fitness transformation, front relaxed posture in plain gym setting, subdued lighting."
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVa0dMUE_UCSr8YSqQaIt_dJn59ZyD7IAqi5g_dECBFbsXqJh6facJW7FhRj2cTj55GlO7EByYYMdxICRVJ68XfGrE7up2pLWKrTl7_IMKq0aCqlx92IPQLZ7lsfNklWSNZqaCJjOoAcmjMI0RSPmYbqjT67rzgzAQwqWX-EwvDSttVoZMwMxuuwQTufFoY33WJ9IFWZvg9vJBhs4IImiQOYedI93YUO0F4NurPF_rnIFlGj1GoxLp4g"
+                    />
+                    <span
+                      class="absolute bottom-2 left-2 px-2 py-0.5 rounded bg-surface-container-lowest/80 text-[11px] font-label-sm uppercase font-bold text-on-surface"
+                      >Antes // 94kg</span
+                    >
+                  </div>
+                  <div class="relative h-full">
+                    <img
+                      class="w-full h-full object-cover"
+                      data-alt="Same male client after 90 days transformation, defined abdominal muscles, expanded chest and shoulders, high-contrast fitness photography with lime accent rim light."
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_VXY9pOHF8RZ-EBh2TkdRGEDFCqepw8djFi5hqPIdSopVnyeAVagMQsoYTisaxEnm233gKG6da8AieZtCbl7a-PcDV0sTRmZ6qejK-dvtAuVfe-BKDT7eE0MHYrfw61v7F9-AX7nEfp12tOsFPtRmoeKqw8uTGafhDGKDRUJSLqCj7VJc_tmxykb7baU1W4CsEPTdcFNoeDR84EIDUQ4GPCdSmT2bEU7EfVTr0JD8PwuCe6vjg8KKRw"
+                    />
+                    <span
+                      class="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-primary-container text-[11px] font-label-sm uppercase font-bold text-on-primary-container"
+                      >Depois // 80kg</span
+                    >
+                  </div>
+                </div>
+                <div class="flex items-center justify-between">
+                  <div>
+                    <h3
+                      class="font-headline-sm text-headline-sm uppercase text-primary"
+                    >
+                      Rodrigo Mendes, 34 anos
+                    </h3>
+                    <span
+                      class="font-body-sm text-body-sm text-on-surface-variant"
+                      >Empresário • Consultoria Online</span
+                    >
+                  </div>
+                  <div
+                    class="px-space-sm py-space-xs rounded bg-surface-container-high text-primary-container font-label-md text-label-md uppercase"
+                  >
+                    -14kg em 90 dias
+                  </div>
+                </div>
+                <p
+                  class="font-body-sm text-body-sm text-on-surface-variant italic"
+                >
+                  "Minha rotina é caótica de reuniões e viagens. O Lucas montou
+                  treinos de 45 minutos que eu consigo fazer no hotel. Minha
+                  disposição física e postura mudaram da água pro vinho."
+                </p>
+                <div class="flex items-center text-primary-container">
+                  <span class="material-symbols-outlined text-[18px]"
+                    >star</span
+                  >
+                  <span class="material-symbols-outlined text-[18px]"
+                    >star</span
+                  >
+                  <span class="material-symbols-outlined text-[18px]"
+                    >star</span
+                  >
+                  <span class="material-symbols-outlined text-[18px]"
+                    >star</span
+                  >
+                  <span class="material-symbols-outlined text-[18px]"
+                    >star</span
+                  >
+                </div>
+              </div>
+              <!-- Case 2 -->
+              <div
+                class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-md shadow-md"
+              >
+                <div
+                  class="grid grid-cols-2 gap-2 h-64 rounded-lg overflow-hidden relative"
+                >
+                  <div class="relative h-full">
+                    <img
+                      class="w-full h-full object-cover"
+                      data-alt="Female client before strength training program, slim build with low muscle definition in standard fitness gear."
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzAam8nRcpc8s_FoKjsn7LF3iFb4hvWHTozJn3kJs6aExCbLTywJBwvcfm4U31Ah0FCD_FgDD-mXNeG8jpmIzw3dqXyHXm-idlnvWu_j5v2j3CLIVM0hfwEeBiHeIte45BsaAkYsWGoWmMHfX-rsGq8r9J-F4bEA7T2h3uyxBIqaRSVYxr54RAeNxAped3m7C7L8vvYvjNE0JahHyy_2UrQRTO9lhbmMl3TyLBaEGkejpKDIYBaoDq-g"
+                    />
+                    <span
+                      class="absolute bottom-2 left-2 px-2 py-0.5 rounded bg-surface-container-lowest/80 text-[11px] font-label-sm uppercase font-bold text-on-surface"
+                      >Antes // 19% MM</span
+                    >
+                  </div>
+                  <div class="relative h-full">
+                    <img
+                      class="w-full h-full object-cover"
+                      data-alt="Athletic female client after 6 months of hypertrophy coaching, toned glutes, sculpted back, athletic shoulders, intense workout lighting."
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8LMjbVBLFVXCl7FjxM55iattV3ltfG2ALFCCNmp-NfuTXSsYQbKqcdoYWoFB8LCsMC3DiT0TGqmu3zyTVGIl7z995ZCeM7wleostyz5LvMcVWHM2VYZsYgRL7ZZawLaNxRKl6Hsp2riv7UXjMZAilJrkUtiUxTY9smzCaeL4R05kYhh7JvrgOtAD6RJgZILIgHF-CIuW6bSec4y0g4Cx_tMYV6k9nvxw5CZkW2OXCsFWC7WNND-WGaw"
+                    />
+                    <span
+                      class="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-primary-container text-[11px] font-label-sm uppercase font-bold text-on-primary-container"
+                      >Depois // +6kg MM</span
+                    >
+                  </div>
+                </div>
+                <div class="flex items-center justify-between">
+                  <div>
+                    <h3
+                      class="font-headline-sm text-headline-sm uppercase text-primary"
+                    >
+                      Camila Ferraz, 29 anos
+                    </h3>
+                    <span
+                      class="font-body-sm text-body-sm text-on-surface-variant"
+                      >Advogada • Personal Presencial VIP</span
+                    >
+                  </div>
+                  <div
+                    class="px-space-sm py-space-xs rounded bg-surface-container-high text-primary-container font-label-md text-label-md uppercase"
+                  >
+                    Hipertrofia Glúteos + Costas
+                  </div>
+                </div>
+                <p
+                  class="font-body-sm text-body-sm text-on-surface-variant italic"
+                >
+                  "Eu sempre tive medo de pegar pesado e ficar masculinizada. O
+                  acompanhamento presencial do Lucas tirou todos os meus mitos
+                  da cabeça. Hoje levanto mais de 100kg no hip thrust com
+                  postura perfeita."
+                </p>
+                <div class="flex items-center text-primary-container">
+                  <span class="material-symbols-outlined text-[18px]"
+                    >star</span
+                  >
+                  <span class="material-symbols-outlined text-[18px]"
+                    >star</span
+                  >
+                  <span class="material-symbols-outlined text-[18px]"
+                    >star</span
+                  >
+                  <span class="material-symbols-outlined text-[18px]"
+                    >star</span
+                  >
+                  <span class="material-symbols-outlined text-[18px]"
+                    >star</span
+                  >
+                </div>
+              </div>
+              <!-- Case 3 -->
+              <div
+                class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-md shadow-md"
+              >
+                <div
+                  class="grid grid-cols-2 gap-2 h-64 rounded-lg overflow-hidden relative"
+                >
+                  <div class="relative h-full">
+                    <img
+                      class="w-full h-full object-cover"
+                      data-alt="Male athlete before rehab program, noticeable shoulder asymmetry and rounded upper back posture."
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIy4Dg7eG44r04FdkR1CPyOwzdMLi5SGew7IaER4VwRkNALRE2h4UKhENw25JbR3RyJMR0e9aEBawFHM6nGfYoVOl3KDAvspaLM8KOap3nE5cCOLXT-qCXXIXBbk1_p6aXZnnnpEEb12pPbWHXuyJ5pl2oaP216t0K6bOOFBB2qRHID9vkcYYi352iQ2NBRZhDZb6O3WP5VU4qxORw8Oy1_6kxOyuJrM0ZR7iBOW_bwTeof7Vu7fyCfQ"
+                    />
+                    <span
+                      class="absolute bottom-2 left-2 px-2 py-0.5 rounded bg-surface-container-lowest/80 text-[11px] font-label-sm uppercase font-bold text-on-surface"
+                      >Antes // Dor Lombar</span
+                    >
+                  </div>
+                  <div class="relative h-full">
+                    <img
+                      class="w-full h-full object-cover"
+                      data-alt="Athletic male client holding heavy kettlebell with pristine spine alignment, visible core activation, strong posture in performance gym."
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1iPzHGPyEZQ7sFMkZ2-BpLp1BQsIiCk1CDQThKsgyjl28cwSGkmh7C14bdBcUHF23Ii2JXuhTwu0Tum3X2kbQtAsekW4uKM7N_0nPrSXLZYMivcQYZ-CdCCfxej1GDQJaE6A4_ThTTIDTfjx-VMN4V3C-U39hsDCJKyy4ZCn3hpU_4EC9Goem5gIdx_Lk3gw0ZRGEyFVoCchi9FyeMCWGjI1EZmomV20gTeOCx0-N4-m08JSh92HShg"
+                    />
+                    <span
+                      class="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-primary-container text-[11px] font-label-sm uppercase font-bold text-on-primary-container"
+                      >Depois // Sem Dor</span
+                    >
+                  </div>
+                </div>
+                <div class="flex items-center justify-between">
+                  <div>
+                    <h3
+                      class="font-headline-sm text-headline-sm uppercase text-primary"
+                    >
+                      Eduardo Matos, 42 anos
+                    </h3>
+                    <span
+                      class="font-body-sm text-body-sm text-on-surface-variant"
+                      >Desenvolvedor • Treino em Dupla</span
+                    >
+                  </div>
+                  <div
+                    class="px-space-sm py-space-xs rounded bg-surface-container-high text-primary-container font-label-md text-label-md uppercase"
+                  >
+                    Reabilitação &amp; Força
+                  </div>
+                </div>
+                <p
+                  class="font-body-sm text-body-sm text-on-surface-variant italic"
+                >
+                  "Passei 10 anos sentado 12 horas por dia com dores crônicas na
+                  lombar. O Lucas estruturou o fortalecimento do core e cadeia
+                  posterior. Hoje vivo com zero dor e bati meu PR de
+                  agachamento."
+                </p>
+                <div class="flex items-center text-primary-container">
+                  <span class="material-symbols-outlined text-[18px]"
+                    >star</span
+                  >
+                  <span class="material-symbols-outlined text-[18px]"
+                    >star</span
+                  >
+                  <span class="material-symbols-outlined text-[18px]"
+                    >star</span
+                  >
+                  <span class="material-symbols-outlined text-[18px]"
+                    >star</span
+                  >
+                  <span class="material-symbols-outlined text-[18px]"
+                    >star</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ============================================================ -->
+        <!-- SOBRE O PERSONAL TRAINER (RF-02)                             -->
+        <!-- ============================================================ -->
+        <section class="w-full bg-surface-container-low py-space-xl" id="sobre">
+          <div
+            class="max-w-7xl mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop"
+          >
+            <div
+              class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-center"
+            >
+              <!-- Image of Coach Lucas -->
+              <div class="lg:col-span-5 relative">
+                <div
+                  class="w-full h-[480px] rounded-xl overflow-hidden bg-surface-container shadow-xl relative"
+                >
+                  <img
+                    class="w-full h-full object-cover object-center"
+                    data-alt="Headshot and upper torso of Lucas Alcantara, professional strength coach, folded arms with focused and welcoming demeanor, black trainer polo with subtle logo, background clean minimalist training studio with dumbbells."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTHeoctr4rEjwZ9_zQ2zoTs2tPGlt8sxCmh9UB1ewIF6pxh8aibjONap0ZYH4aPU9yyh31Ok5Hcv6Uz8mQvgf65EzU_Jj4UO0oJOSkY_TAtyv1pJFaXCYVJv6K1Yz5ieaACd2oKF5STf3kFFJ8tPHPwvuypM3vRX1m0KDtk-OOwkbXLIxnNufK-uXxQHBGJpEyi3hSjFekzszbjtffwSpMcPviuZy-S6ELzOwi5kBFyepCqrzkbnB3Ng"
+                  />
+                  <!-- Bio Tag Overlay -->
+                  <div
+                    class="absolute bottom-4 left-4 right-4 p-space-sm rounded-lg bg-surface-container-lowest/90 backdrop-blur-md flex items-center justify-between"
+                  >
+                    <div>
+                      <span
+                        class="font-headline-sm text-headline-sm uppercase text-primary"
+                        >Lucas Alcantara</span
+                      >
+                      <span
+                        class="font-body-sm text-body-sm text-primary-container block"
+                        >CREF 038291-G/SP • UNIFESP</span
+                      >
+                    </div>
+                    <span
+                      class="material-symbols-outlined text-primary-container text-[28px]"
+                      >verified</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Coach Details & Credentials -->
+              <div class="lg:col-span-7 flex flex-col gap-space-md">
+                <div class="flex flex-col gap-space-xs">
+                  <span
+                    class="font-label-md text-label-md uppercase tracking-wider text-primary-container"
+                    >O Especialista Por Trás dos Seus Resultados</span
+                  >
+                  <h2
+                    class="font-headline-lg text-headline-lg uppercase text-primary"
+                  >
+                    NÃO É APENAS TREINAR FORTE. É TREINAR COM INTELIGÊNCIA
+                    BIOMECÂNICA.
+                  </h2>
+                </div>
+                <p class="font-body-md text-body-md text-on-surface-variant">
+                  Com mais de uma década dedicada à fisiologia do exercício, já
+                  conduzi centenas de transformações físicas de alta
+                  complexidade. Minha missão não é aplicar fórmulas prontas de
+                  influenciadores, mas sim calibrar o estímulo ideal para o seu
+                  perfil biomecânico singular.
+                </p>
+                <p class="font-body-md text-body-md text-on-surface-variant">
+                  Entendo profundamente a rotina de profissionais de alta
+                  produtividade que lidam com escassez de tempo, estresse
+                  elevado e viagens frequentes. Aqui você encontra um protocolo
+                  realista, eficiente e sustentável por anos.
+                </p>
+                <!-- Badges Credentials -->
+                <div
+                  class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm pt-space-xs"
+                >
+                  <div
+                    class="flex items-center gap-space-xs p-space-sm rounded-lg bg-surface-container"
+                  >
+                    <span
+                      class="material-symbols-outlined text-primary-container text-[22px]"
+                      >school</span
+                    >
+                    <div>
+                      <span
+                        class="font-label-sm text-label-sm uppercase text-on-surface block font-bold"
+                        >Pós-Graduado UNIFESP</span
+                      >
+                      <span
+                        class="font-body-sm text-body-sm text-on-surface-variant"
+                        >Fisiologia do Exercício &amp; Desempenho</span
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center gap-space-xs p-space-sm rounded-lg bg-surface-container"
+                  >
+                    <span
+                      class="material-symbols-outlined text-primary-container text-[22px]"
+                      >fitness_center</span
+                    >
+                    <div>
+                      <span
+                        class="font-label-sm text-label-sm uppercase text-on-surface block font-bold"
+                        >Biomecânica Aplicada</span
+                      >
+                      <span
+                        class="font-body-sm text-body-sm text-on-surface-variant"
+                        >Sobrecarga Tensional sem Sobrecarga Articular</span
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center gap-space-xs p-space-sm rounded-lg bg-surface-container"
+                  >
+                    <span
+                      class="material-symbols-outlined text-primary-container text-[22px]"
+                      >cardiology</span
+                    >
+                    <div>
+                      <span
+                        class="font-label-sm text-label-sm uppercase text-on-surface block font-bold"
+                        >Cardiorrespiratório</span
+                      >
+                      <span
+                        class="font-body-sm text-body-sm text-on-surface-variant"
+                        >Prescrição baseada em Limiares de Lactato</span
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center gap-space-xs p-space-sm rounded-lg bg-surface-container"
+                  >
+                    <span
+                      class="material-symbols-outlined text-primary-container text-[22px]"
+                      >shield</span
+                    >
+                    <div>
+                      <span
+                        class="font-label-sm text-label-sm uppercase text-on-surface block font-bold"
+                        >Prevenção de Lesões</span
+                      >
+                      <span
+                        class="font-body-sm text-body-sm text-on-surface-variant"
+                        >Certificação FMS (Functional Movement Screen)</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ============================================================ -->
+        <!-- FORMULÁRIO DE CAPTURA DE LEADS (RF-05)                       -->
+        <!-- ============================================================ -->
+        <section class="w-full bg-surface py-space-xl" id="diagnostico">
+          <div
+            class="max-w-4xl mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop"
+          >
+            <div
+              class="p-space-lg md:p-space-xl rounded-xl bg-surface-container shadow-2xl relative overflow-hidden"
+            >
+              <!-- Subtle back accent -->
+              <div
+                class="absolute top-0 right-0 w-64 h-64 bg-primary-container/10 rounded-full blur-3xl pointer-events-none"
+              ></div>
+              <div
+                class="flex flex-col gap-space-xs text-center max-w-xl mx-auto"
+              >
+                <span
+                  class="font-label-md text-label-md uppercase tracking-wider text-primary-container"
+                  >Avaliação Inicial Sem Compromisso</span
+                >
+                <h2
+                  class="font-headline-lg text-headline-lg uppercase text-primary"
+                >
+                  AGENDE SUA SESSÃO DIAGNÓSTICA GRATUITA
+                </h2>
+                <p class="font-body-md text-body-md text-on-surface-variant">
+                  Preencha seus dados para receber uma análise preliminar da sua
+                  rotina e disponibilidade de vagas na sua região ou online.
+                </p>
+              </div>
+              <form
+                class="mt-space-lg flex flex-col gap-space-md"
+                id="leadForm"
+                onsubmit="
+                  event.preventDefault();
+                  document
+                    .getElementById('formSuccess')
+                    .classList.remove('hidden');
+                  document.getElementById('leadForm').classList.add('hidden');
+                "
+              >
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-gutter">
+                  <!-- Nome Completo -->
+                  <div class="flex flex-col gap-1">
+                    <label
+                      class="font-label-md text-label-md uppercase text-on-surface tracking-wider"
+                      for="leadName"
+                      >Nome Completo</label
+                    >
+                    <div class="relative flex items-center">
+                      <span
+                        class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[20px]"
+                        >person</span
+                      >
+                      <input
+                        class="w-full pl-10 pr-3 py-3 rounded-lg bg-surface-container-lowest text-on-surface placeholder:text-on-surface-variant/60 focus:outline-none focus:bg-surface-container-low transition-colors font-body-md text-body-md shadow-inner"
+                        id="leadName"
+                        placeholder="Ex: Lucas Silva"
+                        required=""
+                        type="text"
+                      />
+                    </div>
+                  </div>
+                  <!-- WhatsApp -->
+                  <div class="flex flex-col gap-1">
+                    <label
+                      class="font-label-md text-label-md uppercase text-on-surface tracking-wider"
+                      for="leadPhone"
+                      >WhatsApp com DDD</label
+                    >
+                    <div class="relative flex items-center">
+                      <span
+                        class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[20px]"
+                        >phone</span
+                      >
+                      <input
+                        class="w-full pl-10 pr-3 py-3 rounded-lg bg-surface-container-lowest text-on-surface placeholder:text-on-surface-variant/60 focus:outline-none focus:bg-surface-container-low transition-colors font-body-md text-body-md shadow-inner"
+                        id="leadPhone"
+                        placeholder="(11) 99999-9999"
+                        required=""
+                        type="tel"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-gutter">
+                  <!-- Objetivo Principal -->
+                  <div class="flex flex-col gap-1">
+                    <label
+                      class="font-label-md text-label-md uppercase text-on-surface tracking-wider"
+                      for="leadGoal"
+                      >Seu Objetivo Principal</label
+                    >
+                    <div class="relative flex items-center">
+                      <span
+                        class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[20px]"
+                        >flag</span
+                      >
+                      <select
+                        class="w-full pl-10 pr-8 py-3 rounded-lg bg-surface-container-lowest text-on-surface focus:outline-none focus:bg-surface-container-low transition-colors font-body-md text-body-md appearance-none cursor-pointer shadow-inner"
+                        id="leadGoal"
+                        required=""
+                      >
+                        <option disabled="" selected="" value="">
+                          Selecione seu objetivo...
+                        </option>
+                        <option value="emagrecimento">
+                          Emagrecimento &amp; Definição
+                        </option>
+                        <option value="hipertrofia">
+                          Hipertrofia Acelerada / Ganho Muscular
+                        </option>
+                        <option value="saude">
+                          Condicionamento, Força &amp; Longevidade
+                        </option>
+                        <option value="reabilitacao">
+                          Reabilitação Postural &amp; Eliminação de Dores
+                        </option>
+                      </select>
+                      <span
+                        class="material-symbols-outlined absolute right-3 pointer-events-none text-on-surface-variant text-[20px]"
+                        >expand_more</span
+                      >
+                    </div>
+                  </div>
+                  <!-- Horário de Preferência -->
+                  <div class="flex flex-col gap-1">
+                    <label
+                      class="font-label-md text-label-md uppercase text-on-surface tracking-wider"
+                      for="leadShift"
+                      >Horário de Preferência</label
+                    >
+                    <div class="relative flex items-center">
+                      <span
+                        class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[20px]"
+                        >schedule</span
+                      >
+                      <select
+                        class="w-full pl-10 pr-8 py-3 rounded-lg bg-surface-container-lowest text-on-surface focus:outline-none focus:bg-surface-container-low transition-colors font-body-md text-body-md appearance-none cursor-pointer shadow-inner"
+                        id="leadShift"
+                        required=""
+                      >
+                        <option disabled="" selected="" value="">
+                          Selecione um turno...
+                        </option>
+                        <option value="manha">Manhã (05:30 às 11:00)</option>
+                        <option value="tarde">Tarde (11:30 às 17:00)</option>
+                        <option value="noite">Noite (17:30 às 22:00)</option>
+                        <option value="online">
+                          100% Flexível (Consultoria Online)
+                        </option>
+                      </select>
+                      <span
+                        class="material-symbols-outlined absolute right-3 pointer-events-none text-on-surface-variant text-[20px]"
+                        >expand_more</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- Modality Interest Checkboxes -->
+                <div class="flex flex-col gap-space-xs pt-space-xs">
+                  <span
+                    class="font-label-sm text-label-sm uppercase text-on-surface tracking-wider"
+                    >Interesse no formato:</span
+                  >
+                  <div class="flex flex-wrap gap-space-sm">
+                    <label
+                      class="inline-flex items-center gap-2 cursor-pointer text-body-sm text-on-surface-variant hover:text-on-surface"
+                    >
+                      <input
+                        checked=""
+                        class="accent-primary-container"
+                        name="modalidade"
+                        type="radio"
+                        value="presencial"
+                      />
+                      <span>Personal Presencial</span>
+                    </label>
+                    <label
+                      class="inline-flex items-center gap-2 cursor-pointer text-body-sm text-on-surface-variant hover:text-on-surface"
+                    >
+                      <input
+                        class="accent-primary-container"
+                        name="modalidade"
+                        type="radio"
+                        value="online"
+                      />
+                      <span>Consultoria Online</span>
+                    </label>
+                    <label
+                      class="inline-flex items-center gap-2 cursor-pointer text-body-sm text-on-surface-variant hover:text-on-surface"
+                    >
+                      <input
+                        class="accent-primary-container"
+                        name="modalidade"
+                        type="radio"
+                        value="dupla"
+                      />
+                      <span>Treino em Dupla</span>
+                    </label>
+                  </div>
+                </div>
+                <!-- Submit CTA Button -->
+                <div class="pt-space-sm">
+                  <button
+                    class="w-full py-space-md rounded-full bg-primary-container text-on-primary-container font-label-lg text-label-lg uppercase tracking-wider shadow-xl transition-all duration-200 hover:scale-[1.01] active:scale-95 flex items-center justify-center gap-space-xs"
+                    type="submit"
+                  >
+                    <span class="material-symbols-outlined text-[22px]"
+                      >bolt</span
+                    >
+                    <span>RECEBER MEU PLANO PERSONALIZADO</span>
+                  </button>
+                </div>
+                <div
+                  class="flex items-center justify-center gap-space-xs text-on-surface-variant text-center font-body-sm text-body-sm"
+                >
+                  <span
+                    class="material-symbols-outlined text-[16px] text-primary-container"
+                    >lock</span
+                  >
+                  <span
+                    >Seus dados são 100% confidenciais. Retorno garantido em até
+                    2 horas úteis.</span
+                  >
+                </div>
+              </form>
+              <!-- Feedback State on Submit -->
+              <div
+                class="hidden py-space-xl flex flex-col items-center justify-center text-center gap-space-sm"
+                id="formSuccess"
+              >
+                <div
+                  class="w-16 h-16 rounded-full bg-primary-container/20 flex items-center justify-center text-primary-container"
+                >
+                  <span class="material-symbols-outlined text-[36px]"
+                    >check_circle</span
+                  >
+                </div>
+                <h3
+                  class="font-headline-md text-headline-md uppercase text-primary"
+                >
+                  Solicitação Recebida com Sucesso!
+                </h3>
+                <p
+                  class="font-body-md text-body-md text-on-surface-variant max-w-md"
+                >
+                  Lucas Alcantara entrará em contato diretamente pelo seu
+                  WhatsApp para validar seu perfil e agendar a consulta de
+                  alinhamento. Prepare-se para treinar de verdade!
+                </p>
+                <a
+                  class="mt-space-sm inline-flex items-center gap-space-xs px-space-lg py-space-sm rounded-full bg-primary-container text-on-primary-container font-label-lg text-label-lg uppercase"
+                  href="https://wa.me/5511999999999"
+                >
+                  <span>Acelerar pelo WhatsApp</span>
+                  <span class="material-symbols-outlined text-[18px]"
+                    >chat</span
+                  >
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ============================================================ -->
+        <!-- FAQ - PERGUNTAS FREQUENTES (RF-07)                           -->
+        <!-- ============================================================ -->
+        <section
+          class="w-full bg-surface-container-lowest py-space-xl"
+          id="faq"
+        >
+          <div
+            class="max-w-4xl mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop flex flex-col gap-space-xl"
+          >
+            <div class="text-center flex flex-col items-center gap-space-xs">
+              <span
+                class="font-label-md text-label-md uppercase tracking-wider text-primary-container"
+                >Tire Suas Dúvidas</span
+              >
+              <h2
+                class="font-headline-lg text-headline-lg uppercase text-primary"
+              >
+                PERGUNTAS FREQUENTES
+              </h2>
+              <p class="font-body-md text-body-md text-on-surface-variant">
+                Tudo o que você precisa saber antes de iniciar seu ciclo de
+                treinamento.
+              </p>
+            </div>
+            <!-- FAQ Accordion Container -->
+            <div class="flex flex-col gap-space-sm" id="faqAccordion">
+              <!-- Question 1 -->
+              <details
+                class="group p-space-md rounded-xl bg-surface-container transition-colors duration-150 open:bg-surface-container-high cursor-pointer shadow-sm"
+              >
+                <summary
+                  class="flex items-center justify-between font-headline-sm text-headline-sm uppercase text-primary list-none"
+                >
+                  <span
+                    >Nunca treinei antes, a consultoria serve para mim?</span
+                  >
+                  <span
+                    class="material-symbols-outlined text-primary-container transition-transform duration-200 group-open:rotate-180"
+                    >expand_more</span
+                  >
+                </summary>
+                <p
+                  class="font-body-md text-body-md text-on-surface-variant mt-space-sm leading-relaxed"
+                >
+                  Com certeza. Na verdade, iniciar com um profissional evita
+                  vícios posturais e lesões comuns em iniciantes. A periodização
+                  começa com foco em adaptação neural, coordenação e
+                  fortalecimento do core antes de qualquer carga pesada.
+                </p>
+              </details>
+              <!-- Question 2 -->
+              <details
+                class="group p-space-md rounded-xl bg-surface-container transition-colors duration-150 open:bg-surface-container-high cursor-pointer shadow-sm"
+              >
+                <summary
+                  class="flex items-center justify-between font-headline-sm text-headline-sm uppercase text-primary list-none"
+                >
+                  <span>Como funciona a Consultoria Online na prática?</span>
+                  <span
+                    class="material-symbols-outlined text-primary-container transition-transform duration-200 group-open:rotate-180"
+                    >expand_more</span
+                  >
+                </summary>
+                <p
+                  class="font-body-md text-body-md text-on-surface-variant mt-space-sm leading-relaxed"
+                >
+                  Após responder à anamnese inicial completa e enviar fotos
+                  posturais, você recebe login no aplicativo exclusivo FITPRO.
+                  Todos os exercícios contam com vídeos em múltiplos ângulos.
+                  Você pode gravar seus movimentos na academia e enviar no
+                  WhatsApp para que o treinador avalie ângulos e cadência.
+                </p>
+              </details>
+              <!-- Question 3 -->
+              <details
+                class="group p-space-md rounded-xl bg-surface-container transition-colors duration-150 open:bg-surface-container-high cursor-pointer shadow-sm"
+              >
+                <summary
+                  class="flex items-center justify-between font-headline-sm text-headline-sm uppercase text-primary list-none"
+                >
+                  <span>Onde são realizados os treinos presenciais?</span>
+                  <span
+                    class="material-symbols-outlined text-primary-container transition-transform duration-200 group-open:rotate-180"
+                    >expand_more</span
+                  >
+                </summary>
+                <p
+                  class="font-body-md text-body-md text-on-surface-variant mt-space-sm leading-relaxed"
+                >
+                  Atendemos em academias parceiras de alto padrão na região do
+                  Itaim Bibi, Jardins, Pinheiros e Vila Olímpia em São Paulo,
+                  além de academias residenciais completas de condomínios
+                  fechados mediante disponibilidade de grade de horário.
+                </p>
+              </details>
+              <!-- Question 4 -->
+              <details
+                class="group p-space-md rounded-xl bg-surface-container transition-colors duration-150 open:bg-surface-container-high cursor-pointer shadow-sm"
+              >
+                <summary
+                  class="flex items-center justify-between font-headline-sm text-headline-sm uppercase text-primary list-none"
+                >
+                  <span>Quais são as formas de pagamento disponíveis?</span>
+                  <span
+                    class="material-symbols-outlined text-primary-container transition-transform duration-200 group-open:rotate-180"
+                    >expand_more</span
+                  >
+                </summary>
+                <p
+                  class="font-body-md text-body-md text-on-surface-variant mt-space-sm leading-relaxed"
+                >
+                  Aceitamos Pix (com 5% de desconto nos planos
+                  trimestrais/semestrais), Cartão de Crédito recorrente (não
+                  consome o limite total do cartão, apenas a mensalidade do mês)
+                  e boleto bancário faturado para empresas.
+                </p>
+              </details>
+              <!-- Question 5 -->
+              <details
+                class="group p-space-md rounded-xl bg-surface-container transition-colors duration-150 open:bg-surface-container-high cursor-pointer shadow-sm"
+              >
+                <summary
+                  class="flex items-center justify-between font-headline-sm text-headline-sm uppercase text-primary list-none"
+                >
+                  <span
+                    >Eu tenho dores no joelho ou na coluna. Posso treinar?</span
+                  >
+                  <span
+                    class="material-symbols-outlined text-primary-container transition-transform duration-200 group-open:rotate-180"
+                    >expand_more</span
+                  >
+                </summary>
+                <p
+                  class="font-body-md text-body-md text-on-surface-variant mt-space-sm leading-relaxed"
+                >
+                  Sim! A musculação bem orientada é a ferramenta mais eficaz
+                  para reabilitação e alívio de dores crônicas articulares.
+                  Adaptamos arcos de movimento, pontos de apoio e exercícios
+                  isométricos que fortalecem sem provocar atrito degenerativo.
+                </p>
+              </details>
+            </div>
+            <!-- Quick WhatsApp banner at bottom of FAQ -->
+            <div
+              class="p-space-lg rounded-xl bg-surface-container-high flex flex-col sm:flex-row items-center justify-between gap-space-md text-center sm:text-left shadow-lg"
+            >
+              <div class="flex items-center gap-space-sm">
+                <div
+                  class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container flex-shrink-0"
+                >
+                  <span class="material-symbols-outlined text-[28px]"
+                    >chat</span
+                  >
+                </div>
+                <div>
+                  <h4
+                    class="font-headline-sm text-headline-sm uppercase text-primary"
+                  >
+                    Ainda tem alguma dúvida pontual?
+                  </h4>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">
+                    Converse agora pelo WhatsApp com nossa equipe e receba um
+                    atendimento rápido.
+                  </p>
+                </div>
+              </div>
+              <a
+                class="px-space-lg py-space-sm rounded-full bg-surface text-primary hover:bg-primary hover:text-surface font-label-lg text-label-lg uppercase tracking-wider transition-colors flex-shrink-0"
+                href="https://wa.me/5511999999999"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Chamar no WhatsApp
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="w-full bg-surface-container-lowest py-space-xl">
+      <div
+        class="max-w-7xl mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop flex flex-col gap-space-xl"
+      >
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter-desktop"
+        >
+          <div class="flex flex-col gap-space-sm">
+            <div class="flex items-center gap-space-xs">
+              <div
+                class="w-7 h-7 rounded-md bg-surface-container-high flex items-center justify-center"
+              >
+                <span
+                  class="material-symbols-outlined text-primary-container text-[18px]"
+                  >bolt</span
+                >
+              </div>
+              <span
+                class="font-headline-sm text-headline-sm uppercase text-primary"
+                >FITPRO
+                <span class="text-primary-container">//</span> ELITE</span
+              >
+            </div>
+            <p class="font-body-sm text-body-sm text-on-surface-variant">
+              Centro de alta performance biomecânica e consultoria
+              personalizada. Treinamento de força, recomposição corporal e
+              longevidade atlética.
+            </p>
+          </div>
+          <div class="flex flex-col gap-space-sm">
+            <span
+              class="font-label-lg text-label-lg uppercase text-primary tracking-wider"
+              >Certificação Técnica</span
+            >
+            <div
+              class="inline-flex items-center gap-space-xs px-space-sm py-space-xs rounded bg-surface-container text-primary-container font-label-md text-label-md"
+            >
+              <span class="material-symbols-outlined text-[16px]">verified</span
+              >CREF 084920-G/SP
+            </div>
+            <p class="font-body-sm text-body-sm text-on-surface-variant">
+              Especialista em Fisiologia do Exercício pela UNIFESP. Biomecânica
+              aplicada à hipertrofia e reabilitação articular.
+            </p>
+          </div>
+          <div class="flex flex-col gap-space-sm">
+            <span
+              class="font-label-lg text-label-lg uppercase text-primary tracking-wider"
+              >Canais Diretos</span
+            >
+            <div class="flex flex-col gap-space-xs">
+              <span
+                class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-space-xs"
+                ><span
+                  class="material-symbols-outlined text-[16px] text-primary-container"
+                  >location_on</span
+                >Av. Faria Lima, 3477 - Itaim Bibi, SP</span
+              ><span
+                class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-space-xs"
+                ><span
+                  class="material-symbols-outlined text-[16px] text-primary-container"
+                  >schedule</span
+                >Seg a Sex: 05:30 - 22:00</span
+              ><span
+                class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-space-xs"
+                ><span
+                  class="material-symbols-outlined text-[16px] text-primary-container"
+                  >mail</span
+                >atendimento@fitprocoach.com.br</span
+              >
+            </div>
+          </div>
+          <div class="flex flex-col gap-space-sm">
+            <span
+              class="font-label-lg text-label-lg uppercase text-primary tracking-wider"
+              >Ecossistema Digital</span
+            >
+            <p class="font-body-sm text-body-sm text-on-surface-variant">
+              Acompanhe treinos, quebras de recorde e análises de movimento nas
+              plataformas:
+            </p>
+            <div class="flex items-center gap-space-sm">
+              <a
+                aria-label="Instagram"
+                class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors"
+                href="#"
+                ><span class="material-symbols-outlined text-[20px]"
+                  >photo_camera</span
+                ></a
+              ><a
+                aria-label="YouTube"
+                class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors"
+                href="#"
+                ><span class="material-symbols-outlined text-[20px]"
+                  >play_circle</span
+                ></a
+              ><a
+                aria-label="Comunidade Telegram"
+                class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors"
+                href="#"
+                ><span class="material-symbols-outlined text-[20px]"
+                  >send</span
+                ></a
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="p-space-md rounded-xl bg-surface-container-low flex flex-col sm:flex-row items-start sm:items-center gap-space-sm text-on-surface-variant"
+        >
+          <span
+            class="material-symbols-outlined text-secondary-container text-[20px] flex-shrink-0"
+            >health_and_safety</span
+          >
+          <p class="font-body-sm text-body-sm">
+            <strong class="text-on-surface"
+              >Aviso Médico &amp; Diretriz de Saúde:</strong
+            >
+            Todo programa de treinamento resistido e condicionamento
+            neuromuscular exige liberação e avaliação médica prévia (PAR-Q ou
+            atestado cardiológico atualizado). Os resultados individuais variam
+            conforme adesão, constância biológica e disciplina nutricional.
+          </p>
+        </div>
+        <div
+          class="flex flex-col sm:flex-row items-center justify-between gap-space-sm text-on-surface-variant"
+        >
+          <span class="font-body-sm text-body-sm"
+            >© 2024 FITPRO Elite Coaching. Todos os direitos reservados.</span
+          >
+          <div class="flex items-center gap-space-md">
+            <a
+              class="font-body-sm text-body-sm hover:text-on-surface transition-colors"
+              href="#"
+              >Termos de Serviço</a
+            ><a
+              class="font-body-sm text-body-sm hover:text-on-surface transition-colors"
+              href="#"
+              >Privacidade &amp; LGPD</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/main.js" defer></script>
+    <aside class="fixed bottom-6 right-6 z-50">
+      <a
+        aria-label="Fale conosco via WhatsApp"
+        class="group flex items-center gap-space-xs pl-space-md pr-space-lg py-space-sm rounded-full bg-primary-container text-on-primary-container font-label-lg text-label-lg uppercase tracking-wider shadow-[0_4px_24px_rgba(206,241,28,0.35)] transition-all duration-200 hover:scale-105"
+        href="https://wa.me/5511999999999"
+        rel="noopener noreferrer"
+        target="_blank"
+        ><span class="material-symbols-outlined text-[24px]">chat</span
+        ><span class="hidden sm:inline">Falar com Coach</span></a
+      >
+    </aside>
+  </body>
+</html>
